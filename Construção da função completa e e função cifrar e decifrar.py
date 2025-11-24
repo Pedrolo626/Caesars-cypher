@@ -41,9 +41,9 @@ def cesar(texto, deslocamento, cifrar=True):
     if deslocamento < 1 or deslocamento > 25:
         return 'Erro: o deslocamento deve estar entre 1 e 25.'
     alfabeto = 'abcdefghijklmnopqrstuvwxyz'
-    alfabeto_deslocado = alfabeto[deslocamento:] + alfabeto[:deslocamento]
-    if not cifrar:
+     if not cifrar:
        deslocamento = -deslocamento
+    alfabeto_deslocado = alfabeto[deslocamento:] + alfabeto[:deslocamento]
     tabela_de_traducao = str.maketrans(alfabeto + alfabeto.upper(), alfabeto_deslocado + alfabeto_deslocado.upper())
     texto_cifrado = texto.translate(tabela_de_traducao)
     return texto_cifrado
