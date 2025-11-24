@@ -50,7 +50,7 @@ def cesar(texto, deslocamento, cifrar=True):
 def cifrar(texto, deslocamento):
     return cesar(texto, deslocamento, cifrar=True)
 def decifrar(texto, deslocamento):
-    return cesar(texto, deslocamento)
+    return cesar(texto, deslocamento, cifrar=False)
 
 # Agora, podemos testar as funções cifrar e decifrar:
 cifrar('Aqui esta uma FRASE para ser cifrada como exemplo, usando tanto caracteres MAIUSCULOS quanto minusculos!', 4) 
