@@ -48,7 +48,7 @@ def cesar(texto, deslocamento, cifrar=True):
     texto_cifrado = texto.translate(tabela_de_traducao)
     return texto_cifrado
 def cifrar(texto, deslocamento):
-    return cesar(texto, deslocamento, cifrar=True)
+    return cesar(texto, deslocamento)
 def decifrar(texto, deslocamento):
     return cesar(texto, deslocamento, cifrar=False)
 
