@@ -35,7 +35,10 @@ def cesar(texto, deslocamento):
 #Se "cifrar" for False, o texto será decifrado. Obs: Cifrar será False se o parâmetro for omitido.
 # Note também que vamos criar duas funções de cesar no final, uma cifra e outra decifra, graças à lógica do parâmetro "cifrar".
 
+# X --- Versão Final --- X
+
 def cesar(texto, deslocamento, cifrar=True):
+# X --- Validando o deslocamento da função--- X
     if not isinstance(deslocamento, int):
         return 'Erro: o deslocamento deve ser um número inteiro.'
     if deslocamento < 1 or deslocamento > 25:
